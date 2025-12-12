@@ -1,0 +1,128 @@
+---
+title: Personalized Job Consultations
+description: Understand the 1-on-1 consultation services offering expert mentorship tailored to your career goals and job search strategy.
+---
+
+## Overview
+
+NxtJob provides personalized 1-on-1 job consultations with career experts who guide mid and senior professionals toward high-paying roles. These sessions deliver tailored strategies for your job search, resume optimization, interview preparation, and networking. You receive actionable advice that aligns with your goals, backed by NxtJob's guarantee of a salary increase.
+
+<Callout kind="success">
+  Clients see an average 25% salary hike after consultations, with expert mentorship accelerating job offers by 40%.
+</Callout>
+
+## Schedule Your Consultation
+
+Book a session directly through your NxtJob dashboard. Choose from 30-minute strategy calls or 60-minute deep dives.
+
+<Steps>
+  <Step title="Log In" icon="log-in">
+    Access your NxtJob account at `https://app.nxtjob.com`.
+  </Step>
+  <Step title="Navigate to Consultations" icon="calendar">
+    Click the `Consultations` tab in the sidebar.
+  </Step>
+  <Step title="Select Time Slot" icon="clock">
+    Pick an available slot with one of our certified coaches. Availability updates in real-time.
+  </Step>
+  <Step title="Confirm and Pay" icon="credit-card">
+    Review details, add notes on your goals, and complete payment. You'll receive a confirmation email with prep materials.
+  </Step>
+</Steps>
+
+## What to Expect in Sessions
+
+Sessions focus on your unique career stage. Prepare by reviewing your resume and recent job applications.
+
+<Tabs>
+  <Tab title="Strategy Session (30 min)" icon="zap">
+    Discuss your target roles and market positioning.
+    
+    | Agenda Item | Duration | Outcome |
+    |-------------|----------|---------|
+    | Goal Setting | 5 min | Defined job targets |
+    | Resume Review | 10 min | Quick fixes identified |
+    | Action Plan | 15 min | 3-5 next steps |
+  </Tab>
+  <Tab title="Deep Dive (60 min)" icon="target">
+    Comprehensive analysis including mock interviews.
+    
+    **Key Activities:**
+    
+    - LinkedIn profile audit
+    - Salary negotiation practice
+    - Networking playbook creation
+  </Tab>
+</Tabs>
+
+## Personalized Guidance Strategies
+
+Consultants use proven frameworks to customize advice for your industry and experience level.
+
+<Columns cols={3}>
+  <Card title="Resume Optimization" icon="file-text" href="/docs/resume-builder">
+    Tailored edits to pass ATS filters and highlight achievements.
+  </Card>
+  <Card title="Interview Mastery" icon="mic" href="/docs/interview-practice">
+    Role-play scenarios with feedback on responses.
+  </Card>
+  <Card title="Networking Boost" icon="users" href="/docs/networking-tools">
+    Personalized outreach scripts and connection strategies.
+  </Card>
+</Columns>
+
+## Integrate Advice with Platform Tools
+
+Apply session insights directly in NxtJob's tools for seamless tracking.
+
+<Steps>
+  <Step title="Update Job Tracker" icon="list">
+    Log new applications with consultant-recommended keywords.
+  </Step>
+  <Step title="Refine Resume" icon="edit-3">
+    Use the Resume Builder to implement feedback.
+  </Step>
+  <Step title="Practice Interviews" icon="play-circle">
+    Schedule AI mock sessions aligned with your strategy.
+  </Step>
+</Steps>
+
+<CodeGroup tabs="Dashboard JS,Python Tracker">
+  ```javascript
+  // Update job status in dashboard
+  const updateJob = async (jobId, status) => {
+    await fetch(`/api/jobs/${jobId}`, {
+      method: 'PATCH',
+      body: JSON.stringify({ status: 'consultant-applied', notes: 'Used optimized resume' })
+    });
+  };
+  updateJob('job-12345', 'applied');
+  ```
+  ```python
+  # Track progress via API
+  import requests
+  response = requests.patch(
+    'https://api.nxtjob.com/jobs/job-12345',
+    json={'status': 'consultant-applied', 'notes': 'Optimized per session'}
+  )
+  print(response.json())
+  ```
+</CodeGroup>
+
+## Frequently Asked Questions
+
+<ExpandableGroup>
+  <Expandable title="How do I prepare for my session?" default-open="true">
+    Gather your current resume, LinkedIn URL, target job descriptions, and recent challenges. Sessions are most effective with specifics.
+  </Expandable>
+  <Expandable title="What if I need follow-up?">
+    Book additional sessions or use in-app messaging for quick clarifications. Unlimited revisions on generated documents.
+  </Expandable>
+  <Expandable title="Is there a satisfaction guarantee?">
+    Yes, NxtJob guarantees results or your money back. Track progress with our salary hike promise.
+  </Expandable>
+</ExpandableGroup>
+
+<Callout kind="tip">
+  Combine consultations with NxtJob's AI tools for maximum impact—clients who do report landing offers 2x faster.
+</Callout>

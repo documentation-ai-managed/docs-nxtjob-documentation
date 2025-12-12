@@ -1,0 +1,140 @@
+---
+title: Mastering NxtJob's Core Tools
+description: Explore the AI-powered tools for resume building, cover letters, LinkedIn optimization, interview practice, job tracking, and networking to streamline your job hunt.
+---
+
+## Overview
+
+NxtJob equips you with AI-driven tools to accelerate your job search. You build standout resumes, craft compelling cover letters, optimize your LinkedIn profile, practice interviews, track applications, and expand your network. These features guarantee faster interviews and salary hikes through smart automation and expert guidance.
+
+<Columns cols={3}>
+  <Card title="Resume Builder" icon="file-text" href="/docs/resume-builder">
+    Generate ATS-friendly resumes tailored to job descriptions in seconds.
+  </Card>
+  <Card title="Cover Letter AI" icon="mail" href="/docs/cover-letters">
+    Create personalized letters that highlight your unique strengths.
+  </Card>
+  <Card title="LinkedIn Optimizer" icon="linkedin" href="/docs/linkedin">
+    Boost your profile visibility with AI-suggested edits and keywords.
+  </Card>
+</Columns>
+
+<Columns cols={2}>
+  <Card title="Interview Simulator" icon="mic" href="/docs/interviews">
+    Practice with realistic mock interviews and instant feedback.
+  </Card>
+  <Card title="Job Tracker" icon="calendar" href="/docs/tracker">
+    Manage applications, follow-ups, and deadlines effortlessly.
+  </Card>
+</Columns>
+
+## Resume and Cover Letter Creation
+
+Start by uploading your existing documents or entering details manually. The AI analyzes job postings you paste and generates customized content.
+
+<Steps>
+  <Step title="Paste Job Description" icon="clipboard">
+    Copy the job description from LinkedIn or Indeed into the input field.
+  </Step>
+  <Step title="Upload Your Info" icon="upload">
+    Provide your work history, skills, and achievements.
+  </Step>
+  <Step title="Generate & Edit" icon="sparkles">
+    Review AI suggestions, tweak phrasing, and export as PDF or Word.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Tailor each resume to match keywords from the job description for >90% ATS pass rates.
+</Callout>
+
+<Tabs>
+  <Tab title="Resume Export" icon="download">
+    Export in multiple formats for easy sharing.
+
+    ```json
+    {
+      "resume": {
+        "name": "Jane Doe",
+        "position": "Senior Software Engineer",
+        "company": "Google",
+        "skills": ["React", "Node.js", "AWS"]
+      }
+    }
+    ```
+  </Tab>
+  <Tab title="Cover Letter Preview" icon="eye">
+    Preview your letter before finalizing.
+
+    ```markdown
+    Dear Hiring Manager,
+
+    With 8+ years in full-stack development...
+    ```
+  </Tab>
+</Tabs>
+
+## LinkedIn Profile Enhancement
+
+Upload your LinkedIn URL, and the AI scans for improvements. It suggests keyword-rich headlines, summary rewrites, and experience bullet points.
+
+<Expandable title="Advanced Optimization Tips" default-open="false">
+
+Use the tool weekly to adapt to trending skills like `{machine learning}` or `{DevOps}`.
+
+| Section       | AI Suggestion Example                  | Impact                  |
+|---------------|----------------------------------------|-------------------------|
+| Headline     | `Senior DevOps Engineer \| AWS Certified \| Scaling Teams` | +40% profile views     |
+| About        | 200-word summary with achievements     | Better recruiter reach |
+| Experience   | Quantified bullets: `Led team to 30% faster deployments` | Stronger endorsements  |
+
+</Expandable>
+
+## Interview Preparation Simulations
+
+Simulate real interviews with AI interviewers mimicking tech leads or HR pros. Record responses for self-review.
+
+<Tabs>
+  <Tab title="Behavioral" icon="users">
+    Practice STAR method questions like "Tell me about a challenge you overcame."
+  </Tab>
+  <Tab title="Technical" icon="code">
+    Code live or answer system design queries with feedback on clarity.
+  </Tab>
+</Tabs>
+
+<Callout kind="success">
+  Users who complete 5+ sessions land interviews 3x faster.
+</Callout>
+
+## Job Tracking and Networking
+
+Centralize applications in the dashboard. Set reminders for follow-ups and discover networking events.
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+  // Integrate job tracking with your calendar
+  const jobs = await fetch('https://api.nxtjob.com/tracker', {
+    headers: { 'Authorization': 'Bearer YOUR_TOKEN' }
+  });
+  console.log(jobs.applications);
+  ```
+  ```python
+  # Python integration example
+  import requests
+  response = requests.get('https://api.nxtjob.com/tracker',
+                         headers={'Authorization': 'Bearer YOUR_TOKEN'})
+  print(response.json()['applications'])
+  ```
+</CodeGroup>
+
+Track metrics like response rates and adjust strategies. Network via AI-matched connections for referrals.
+
+<Columns cols={2}>
+  <Card title="1-on-1 Consultations" icon="user" horizontal>
+    Book expert sessions for personalized roadmaps.
+  </Card>
+  <Card title="Salary Guarantee" icon="trending-up" horizontal>
+    Achieve your target salary or get extended support.
+  </Card>
+</Columns>

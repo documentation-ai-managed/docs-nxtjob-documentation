@@ -1,0 +1,87 @@
+{
+  "name": "Nxtjob Documentation",
+  "initialRoute": "introduction",
+  "colors": {
+    "light": {
+      "brand": "#2b76df"
+    },
+    "dark": {
+      "brand": "#6098e7"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "icon": "book",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "icon": "rocket",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "introduction",
+                "icon": "star"
+              },
+              {
+                "title": "Getting Started",
+                "path": "getting-started",
+                "icon": "flag"
+              }
+            ]
+          },
+          {
+            "group": "Core Tools",
+            "icon": "layers",
+            "pages": [
+              {
+                "title": "Core Tools",
+                "path": "core-tools",
+                "icon": "grid"
+              },
+              {
+                "title": "Consultations",
+                "path": "consultations",
+                "icon": "users"
+              }
+            ]
+          },
+          {
+            "group": "Help & Support",
+            "icon": "help-circle",
+            "pages": [
+              {
+                "title": "FAQ",
+                "path": "faq",
+                "icon": "info"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "icon": "code",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "icon": "terminal",
+            "openapi": "openapi.yaml"
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "icon": "clock",
+        "pages": [
+          {
+            "title": "Release History",
+            "path": "changelog",
+            "icon": "history"
+          }
+        ]
+      }
+    ]
+  }
+}

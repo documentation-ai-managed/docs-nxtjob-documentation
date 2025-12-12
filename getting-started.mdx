@@ -1,0 +1,111 @@
+---
+title: Get Started with NxtJob
+description: Learn the essential steps to sign up, set up your profile, and begin using the platform's core features right away.
+---
+
+## Quick Start
+
+NxtJob helps you land high-paying jobs faster with AI-powered tools for resumes, cover letters, LinkedIn optimization, interview practice, and job tracking. Follow these steps to create your account, set up your profile, explore the dashboard, and start your job search.
+
+<Callout kind="tip">
+  Complete profile setup within the first 24 hours to unlock personalized job recommendations and a free consultation session.
+</Callout>
+
+## Create Your Account
+
+Sign up in under 2 minutes and verify your email to access all features.
+
+<Steps>
+  <Step title="Visit NxtJob" icon="globe">
+    Go to [https://app.nxtjob.com/signup](https://app.nxtjob.com/signup) and click **Sign Up**.
+  </Step>
+  <Step title="Enter Details" icon="user">
+    Provide your email (`your.email@example.com`), create a strong password, and select your experience level (Mid-level or Senior).
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for the verification link from `no-reply@nxtjob.com` and click it to activate your account.
+  </Step>
+</Steps>
+
+## Set Up Your Profile
+
+Build a complete profile to get tailored recommendations. Upload your current resume to auto-fill details.
+
+<Tabs>
+  <Tab title="Basic Info" icon="user">
+    Add your full name, phone number, location (`San Francisco, CA`), and target salary (`$150,000+`).
+  </Tab>
+  <Tab title="Professional Summary" icon="briefcase">
+    Write a 3-5 sentence summary: `Experienced Senior Software Engineer with 8+ years in full-stack development, specializing in React and Node.js. Seeking remote roles at FAANG companies.`
+  </Tab>
+  <Tab title="Preferences" icon="settings">
+    Set job preferences:
+    
+    | Preference     | Example Value              |
+    |----------------|----------------------------|
+    | Job Titles     | Senior Engineer, Lead Dev |
+    | Locations      | Remote, NYC, SF            |
+    | Salary Range   | `$140k - $200k`            |
+    | Industries     | Tech, Fintech              |
+  </Tab>
+</Tabs>
+
+## Navigate the Dashboard
+
+The dashboard centralizes your job search tools.
+
+<Columns cols={3}>
+  <Card title="Job Tracker" icon="list" href="/dashboard/tracker">
+    Monitor applications and follow-ups.
+  </Card>
+  <Card title="AI Resume Builder" icon="file-text" href="/dashboard/resume">
+    Generate optimized resumes in seconds.
+  </Card>
+  <Card title="Interview Prep" icon="mic" href="/dashboard/interview">
+    Practice with AI mock interviews.
+  </Card>
+</Columns>
+
+## Launch Your Job Search
+
+Configure initial searches and connect external tools.
+
+<Steps>
+  <Step title="Run First Search" icon="search">
+    Enter keywords like `Senior React Developer remote` and filter by salary `> $150k`.
+  </Step>
+  <Step title="Track Jobs" icon="bookmark">
+    Save jobs to your tracker. Use the API for integrations:
+    
+    <CodeGroup tabs="JavaScript,Python">
+      ```javascript
+      const nxtjobApiKey = 'YOUR_NXTJOB_API_KEY';
+      fetch('https://api.nxtjob.com/v1/jobs/track', {
+        method: 'POST',
+        headers: { 'Authorization': `Bearer ${nxtjobApiKey}` },
+        body: JSON.stringify({ jobId: 'job_12345', status: 'applied' })
+      });
+      ```
+      ```python
+      import requests
+      api_key = 'YOUR_NXTJOB_API_KEY'
+      requests.post('https://api.nxtjob.com/v1/jobs/track',
+                    headers={'Authorization': f'Bearer {api_key}'},
+                    json={'jobId': 'job_12345', 'status': 'applied'})
+      ```
+    </CodeGroup>
+  </Step>
+  <Step title="Book Consultation" icon="calendar">
+    Schedule your free 1-on-1 session via the dashboard.
+  </Step>
+</Steps>
+
+<Expandable title="Troubleshooting Common Issues" default-open="false">
+  - **Email not received?** Check spam folder or resend from account settings.
+  - **Profile incomplete?** Upload resume to auto-populate 80% of fields.
+  - **No jobs matching?** Adjust preferences to broaden results.
+</Expandable>
+
+<Callout kind="success">
+  You're ready! Expect your first AI-generated cover letter within minutes. Track progress toward your salary hike goal.
+</Callout>

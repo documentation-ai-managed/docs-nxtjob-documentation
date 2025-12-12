@@ -1,0 +1,127 @@
+---
+title: Changelog
+description: Track the latest updates, new features, and improvements to the NxtJob platform.
+---
+
+## Recent Updates
+
+Stay informed about NxtJob enhancements. You receive automatic updates to access new AI-driven tools for resume optimization, interview preparation, and job tracking. Review changes below to leverage the latest features that accelerate your job search.
+
+<Callout kind="info">
+  Enable notifications in your account settings to get email alerts for major releases.
+</Callout>
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Enhanced AI interview prep with mock sessions tailored to your target roles
+- Real-time feedback on responses using advanced natural language processing
+- Personalized question banks based on job descriptions you track
+
+## Improvements
+
+- Faster resume builder with one-click ATS optimization for 50+ systems
+- Improved LinkedIn profile scanner detecting 20+ optimization opportunities
+
+## Bug Fixes
+
+- Fixed sync issues with job tracking across mobile and web
+- Resolved cover letter template loading delays
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Networking tool integrations with LinkedIn and email outreach automation
+- 1-on-1 consultation scheduler with calendar sync for expert sessions
+- Job match alerts with salary hike predictions based on your profile
+
+## Bug Fixes
+
+- Corrected profile optimization suggestions not saving properly
+- Fixed dashboard refresh errors during high-traffic periods
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## Initial Release
+
+- Core platform launch with resume builder, cover letter generator, and job tracker
+- LinkedIn profile optimizer and basic interview practice tools
+- User dashboard for tracking applications and networking connections
+
+## Breaking Changes
+
+- Updated authentication flow requires email verification on first login
+
+</Update>
+
+## Upgrade Instructions
+
+Follow these steps to ensure you run the latest version and access new features.
+
+<Steps>
+  <Step title="Check Version" icon="info">
+    Log in to your NxtJob dashboard. Navigate to **Account > Settings** and view the version number.
+  </Step>
+  <Step title="Update Profile" icon="settings">
+    Refresh your browser or app. Clear cache if features do not appear.
+  </Step>
+  <Step title="Test New Tools" icon="play">
+    Try the updated AI interview prep by starting a mock session.
+  </Step>
+</Steps>
+
+## Feature Navigation
+
+Discover how recent updates enhance your job search.
+
+<Columns cols={3}>
+  <Card title="AI Interview Prep" icon="zap" href="/docs/interview-prep">
+    Practice with tailored questions and instant feedback.
+  </Card>
+  <Card title="Networking Tools" icon="users" href="/docs/networking">
+    Automate outreach and track connections seamlessly.
+  </Card>
+  <Card title="Resume Builder" icon="file-text" href="/docs/resume-builder">
+    Optimize for ATS with one-click enhancements.
+  </Card>
+</Columns>
+
+## View Changes by Category
+
+Select a category to explore detailed examples.
+
+<Tabs>
+  <Tab title="Integrations" icon="link">
+    New networking APIs connect with your existing tools.
+    
+    <CodeGroup tabs="JavaScript,Python">
+    ```javascript
+    const nxtjob = require('nxtjob-sdk');
+    const client = new nxtjob.Client({ apiKey: 'YOUR_API_KEY' });
+    await client.networking.integrateLinkedIn();
+    ```
+    ```python
+    import nxtjob
+    client = nxtjob.Client(api_key='YOUR_API_KEY')
+    client.networking.integrate_linkedin()
+    ```
+    </CodeGroup>
+  </Tab>
+  <Tab title="AI Enhancements" icon="brain">
+    Upgraded models improve accuracy.
+    
+    <Expandable title="Advanced Settings" default-open="false">
+      Customize AI feedback levels in **Settings > AI Preferences**.
+    </Expandable>
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+  Provide feedback on updates via the in-app form to shape future releases.
+</Callout>
